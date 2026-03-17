@@ -37,7 +37,7 @@ def main() -> None:
 
 
 def send_test_prompt(token: str, prompt: str) -> Dict[str, Any]:
-    url = "https://api-inference.huggingface.co/models/gpt2"
+    url = "https://api-inference.huggingface.co/models/openai-community/gpt2"
     headers = {"Authorization": f"Bearer {token}"}
     payload = {"inputs": prompt}
 
